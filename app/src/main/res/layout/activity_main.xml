@@ -17,8 +17,10 @@
             android:layout_height="wrap_content"
             android:freezesText="true"
             android:text="@string/player_1_0"
-            android:textColor="@color/colorAccent"
-            android:textSize="30sp" />
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            android:textSize="30sp"
+            android:textStyle="bold|italic" />
 
         <TextView
             android:id="@+id/text_view_p2"
@@ -27,32 +29,35 @@
             android:layout_below="@+id/text_view_p1"
             android:freezesText="true"
             android:text="@string/player_2_0"
-            android:textColor="@color/colorAccent"
-            android:textSize="30sp" />
+            android:textColor="@color/colorPrimary"
+            android:textSize="30sp"
+            android:textStyle="bold|italic" />
 
         <Button
             android:id="@+id/button_reset"
-            android:layout_width="51dp"
-            android:layout_height="49dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             android:layout_alignParentEnd="true"
-            android:layout_marginEnd="60dp"
-            android:background="@drawable/reset_btn_image"
+            android:layout_marginEnd="86dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="RESET"
             android:textAlignment="center"
-            android:textSize="20sp"
+            android:textSize="15sp"
             android:textStyle="bold"
-            android:typeface="normal" />
+            android:typeface="monospace" />
 
         <Button
             android:id="@+id/button_exit"
-            android:layout_width="51dp"
-            android:layout_height="51dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             android:layout_alignParentEnd="true"
             android:layout_marginEnd="6dp"
-            android:background="@drawable/exit_btn_image"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="EXIT"
             android:textAlignment="center"
-            android:textSize="20sp"
+            android:textSize="15sp"
             android:textStyle="bold"
-            android:typeface="normal" />
+            android:typeface="monospace" />
 
     </RelativeLayout>
 
@@ -66,27 +71,30 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="@drawable/image00"
+            android:backgroundTint="@color/colorPrimaryDark"
             android:freezesText="true"
-            android:textSize="60sp"
-            android:background="@drawable/image00" />
+            android:textSize="100sp" />
 
         <Button
             android:id="@+id/button_01"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="@drawable/image01"
+            android:backgroundTint="@color/colorPrimaryDark"
             android:freezesText="true"
-            android:textSize="60sp"
-            android:background="@drawable/image01" />
+            android:textSize="100sp" />
 
         <Button
             android:id="@+id/button_02"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="@drawable/image02"
+            android:backgroundTint="@color/colorPrimaryDark"
             android:freezesText="true"
-            android:textSize="60sp"
-            android:background="@drawable/image02" />
+            android:textSize="100sp" />
 
     </LinearLayout>
 
@@ -100,27 +108,30 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="@drawable/image10"
+            android:backgroundTint="@color/colorPrimaryDark"
             android:freezesText="true"
-            android:textSize="60sp"
-            android:background="@drawable/image10" />
+            android:textSize="100sp" />
 
         <Button
             android:id="@+id/button_11"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="@drawable/image11"
+            android:backgroundTint="@color/colorPrimaryDark"
             android:freezesText="true"
-            android:textSize="60sp"
-            android:background="@drawable/image11" />
+            android:textSize="100sp" />
 
         <Button
             android:id="@+id/button_12"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="@drawable/image12"
+            android:backgroundTint="@color/colorPrimaryDark"
             android:freezesText="true"
-            android:textSize="60sp"
-            android:background="@drawable/image12" />
+            android:textSize="100sp" />
 
     </LinearLayout>
 
@@ -134,28 +145,31 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="@drawable/image20"
+            android:backgroundTint="@color/colorPrimaryDark"
             android:freezesText="true"
-            android:textSize="60sp"
-            android:background="@drawable/image20" />
+            android:textSize="100sp" />
 
         <Button
             android:id="@+id/button_21"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="@drawable/image21"
+            android:backgroundTint="@color/colorPrimaryDark"
             android:freezesText="true"
-            android:textSize="60sp"
-            tools:ignore="ButtonStyle"
-            android:background="@drawable/image21" />
+            android:textSize="100sp"
+            tools:ignore="ButtonStyle" />
 
         <Button
             android:id="@+id/button_22"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="@drawable/image22"
+            android:backgroundTint="@color/colorPrimaryDark"
             android:freezesText="true"
-            android:textSize="60sp"
-            android:background="@drawable/image22" />
+            android:textSize="100sp" />
 
     </LinearLayout>
 
