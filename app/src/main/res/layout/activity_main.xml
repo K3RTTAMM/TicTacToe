@@ -40,7 +40,17 @@
             android:layout_centerVertical="true"
             android:layout_marginEnd="33dp"
             android:background="@drawable/button_background"
-            android:text="reset"
+            android:text="RESET"
+            android:typeface="monospace" />
+
+        <Button
+            android:id="@+id/button_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="132dp"
+            android:background="@drawable/button_background"
+            android:text="EXIT"
             android:typeface="monospace" />
 
     </RelativeLayout>

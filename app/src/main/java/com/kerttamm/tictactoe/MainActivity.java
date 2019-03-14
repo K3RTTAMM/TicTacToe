@@ -1,5 +1,6 @@
 package com.kerttamm.tictactoe;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -9,6 +10,9 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
+    String player1;
+    String player2;
+
     private Button[][] buttons = new Button[3][3];
     private boolean player1Turn = true;
     private int roundCount;
@@ -16,7 +20,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private int player2Points;
     private TextView textViewPlayer1;
     private TextView textViewPlayer2;
-
 
     public void DisplayWhichPlayersTurn(){
         if(player1Turn == true){
@@ -32,6 +35,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Intent intent = getIntent();
+        player1 = intent.getStringExtra("player1");
+        player2 = intent.getStringExtra("player2");
 
         textViewPlayer1 = findViewById(R.id.text_view_p1);
         textViewPlayer2 = findViewById(R.id.text_view_p2);
@@ -53,9 +59,27 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             public void onClick(View v) {
                 resetGame();
             }
-        });
+        }); // Reset Button functionality
+
+        Button buttonExit = findViewById(R.id.button_exit);
+        buttonExit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                exitGame();
+            }
+        }); // Exit button functionality
 
         getSupportActionBar().hide(); //Hides the Top Action Bar
+
+    }
+
+    public void exitGame(){
+
+        Intent _intentOBJ= new Intent(Intent.ACTION_MAIN);
+        _intentOBJ.addCategory(Intent.CATEGORY_HOME);
+        _intentOBJ.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        _intentOBJ.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(_intentOBJ);
 
     }
 
