@@ -17,8 +17,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private TextView textViewPlayer1;
     private TextView textViewPlayer2;
 
-    String player1;
-    String player2;
+
+    public void DisplayWhichPlayersTurn(){
+        if(player1Turn == true){
+            textViewPlayer1.setText("PLAYER 1"+" : "+ player1Points+" TURN");
+            textViewPlayer2.setText("PLAYER 2"+" : "+player2Points);
+        }else{
+            textViewPlayer2.setText("PLAYER 2"+" : "+player2Points+" TURN");
+            textViewPlayer1.setText("PLAYER 1"+" : "+ player1Points);
+        }
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,8 +35,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         textViewPlayer1 = findViewById(R.id.text_view_p1);
         textViewPlayer2 = findViewById(R.id.text_view_p2);
-        textViewPlayer1.setText(player1+" : "+ player1Points);
-        textViewPlayer2.setText(player2+" : "+player2Points);
+        textViewPlayer1.setText("PLAYER 1"+" : "+ player1Points+" TURN");
+        textViewPlayer2.setText("PLAYER 2"+" : "+player2Points);
 
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
@@ -48,6 +56,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         });
 
         getSupportActionBar().hide(); //Hides the Top Action Bar
+
     }
 
     @Override
@@ -75,6 +84,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         } else {
             player1Turn = !player1Turn;
         }
+
+        DisplayWhichPlayersTurn();
 
     }
 
@@ -120,26 +131,26 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void player1Wins() {
         player1Points++;
-        Toast.makeText(this, "Player 1 wins!", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "PLAYER 1 WON!", Toast.LENGTH_SHORT).show();
         updatePointsText();
         resetBoard();
     }
 
     private void player2Wins() {
         player2Points++;
-        Toast.makeText(this, "Player 2 wins!", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "PLAYER 2 WON!", Toast.LENGTH_SHORT).show();
         updatePointsText();
         resetBoard();
     }
 
     private void draw() {
-        Toast.makeText(this, "Draw!", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "IT'S A DRAW!", Toast.LENGTH_SHORT).show();
         resetBoard();
     }
 
     private void updatePointsText() {
-        textViewPlayer1.setText("Player 1: " + player1Points);
-        textViewPlayer2.setText("Player 2: " + player2Points);
+        textViewPlayer1.setText("PLAYER 1: " + player1Points + " TURN");
+        textViewPlayer2.setText("PLAYER 2: " + player2Points);
     }
 
     private void resetBoard() {
