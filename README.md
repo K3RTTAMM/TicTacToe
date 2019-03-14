@@ -17,4 +17,4 @@ Juhend oli suhteliselt hea ja arusaadav, mõne asjaga läks küll aega enne kui 
 ### Kirjeldatakse vajalikest muutustest seoses SDK versiooni muutustega.
 Kuna mul oli juba enda arvutis Android Studio ja vajalikud SDK ning NDK versioonid varasemalt installitud/seadistatud oma arvutis GameMaker Studio 2 jaoks ja Android Studios sellega loodud mängude .apk'de virtuaalmasinates testimiseks, siis polnud lisasätteid vaja teha, et projekt töötaks.
 
-### Kus kirjeldatakse juhendi muudest muutustest rakenduse terviklikumaks muutmise nimel.
+### Kirjeldus juhendi muudest muutustest rakenduse terviklikumaks muutmiseks.
