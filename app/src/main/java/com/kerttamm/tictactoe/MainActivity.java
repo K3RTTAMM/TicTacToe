@@ -10,17 +10,15 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Button[][] buttons = new Button[3][3];
-    String player1;
-    String player2;
     private boolean player1Turn = true;
-
     private int roundCount;
-
     private int player1Points;
     private int player2Points;
-
     private TextView textViewPlayer1;
     private TextView textViewPlayer2;
+
+    String player1;
+    String player2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +27,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         textViewPlayer1 = findViewById(R.id.text_view_p1);
         textViewPlayer2 = findViewById(R.id.text_view_p2);
+        textViewPlayer1.setText(player1+" : "+ player1Points);
+        textViewPlayer2.setText(player2+" : "+player2Points);
 
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
