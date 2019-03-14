@@ -20,10 +20,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     public void DisplayWhichPlayersTurn(){
         if(player1Turn == true){
-            textViewPlayer1.setText("PLAYER 1"+" : "+ player1Points+" TURN");
+            textViewPlayer1.setText("PLAYER 1"+" : "+ player1Points+" turn");
             textViewPlayer2.setText("PLAYER 2"+" : "+player2Points);
         }else{
-            textViewPlayer2.setText("PLAYER 2"+" : "+player2Points+" TURN");
+            textViewPlayer2.setText("PLAYER 2"+" : "+player2Points+" turn");
             textViewPlayer1.setText("PLAYER 1"+" : "+ player1Points);
         }
     }
@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         textViewPlayer1 = findViewById(R.id.text_view_p1);
         textViewPlayer2 = findViewById(R.id.text_view_p2);
-        textViewPlayer1.setText("PLAYER 1"+" : "+ player1Points+" TURN");
+        textViewPlayer1.setText("PLAYER 1"+" : "+ player1Points+" turn");
         textViewPlayer2.setText("PLAYER 2"+" : "+player2Points);
 
         for (int i = 0; i < 3; i++) {
@@ -167,7 +167,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void updatePointsText() {
-        textViewPlayer1.setText("PLAYER 1: " + player1Points + " TURN");
+        textViewPlayer1.setText("PLAYER 1: " + player1Points + " turn");
         textViewPlayer2.setText("PLAYER 2: " + player2Points);
     }
 

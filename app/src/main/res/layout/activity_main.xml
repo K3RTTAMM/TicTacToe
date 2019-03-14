@@ -17,9 +17,8 @@
             android:layout_height="wrap_content"
             android:freezesText="true"
             android:text="@string/player_1_0"
-            android:textColor="@color/colorPrimary"
-            android:textSize="30sp"
-            android:typeface="sans" />
+            android:textColor="@color/colorAccent"
+            android:textSize="30sp" />
 
         <TextView
             android:id="@+id/text_view_p2"
@@ -28,9 +27,8 @@
             android:layout_below="@+id/text_view_p1"
             android:freezesText="true"
             android:text="@string/player_2_0"
-            android:textColor="@color/colorPrimary"
-            android:textSize="30sp"
-            android:typeface="sans" />
+            android:textColor="@color/colorAccent"
+            android:textSize="30sp" />
 
         <Button
             android:id="@+id/button_reset"
@@ -49,7 +47,7 @@
             android:layout_width="51dp"
             android:layout_height="51dp"
             android:layout_alignParentEnd="true"
-            android:layout_marginEnd="5dp"
+            android:layout_marginEnd="6dp"
             android:background="@drawable/exit_btn_image"
             android:textAlignment="center"
             android:textSize="20sp"
@@ -69,7 +67,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:freezesText="true"
-            android:textSize="60sp" />
+            android:textSize="60sp"
+            android:background="@drawable/image00" />
 
         <Button
             android:id="@+id/button_01"
@@ -77,7 +76,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:freezesText="true"
-            android:textSize="60sp" />
+            android:textSize="60sp"
+            android:background="@drawable/image01" />
 
         <Button
             android:id="@+id/button_02"
@@ -85,7 +85,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:freezesText="true"
-            android:textSize="60sp" />
+            android:textSize="60sp"
+            android:background="@drawable/image02" />
 
     </LinearLayout>
 
@@ -100,7 +101,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:freezesText="true"
-            android:textSize="60sp" />
+            android:textSize="60sp"
+            android:background="@drawable/image10" />
 
         <Button
             android:id="@+id/button_11"
@@ -108,7 +110,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:freezesText="true"
-            android:textSize="60sp" />
+            android:textSize="60sp"
+            android:background="@drawable/image11" />
 
         <Button
             android:id="@+id/button_12"
@@ -116,7 +119,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:freezesText="true"
-            android:textSize="60sp" />
+            android:textSize="60sp"
+            android:background="@drawable/image12" />
 
     </LinearLayout>
 
@@ -131,7 +135,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:freezesText="true"
-            android:textSize="60sp" />
+            android:textSize="60sp"
+            android:background="@drawable/image20" />
 
         <Button
             android:id="@+id/button_21"
@@ -140,7 +145,8 @@
             android:layout_weight="1"
             android:freezesText="true"
             android:textSize="60sp"
-            tools:ignore="ButtonStyle" />
+            tools:ignore="ButtonStyle"
+            android:background="@drawable/image21" />
 
         <Button
             android:id="@+id/button_22"
@@ -148,7 +154,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:freezesText="true"
-            android:textSize="60sp" />
+            android:textSize="60sp"
+            android:background="@drawable/image22" />
 
     </LinearLayout>
 
