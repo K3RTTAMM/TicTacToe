@@ -10,8 +10,11 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
+
+
     private Button[][] buttons = new Button[3][3];
     private boolean player1Turn = true;
+    private boolean lastPlayer1 = true;
     private int roundCount;
     private int player1Points;
     private int player2Points;
@@ -85,8 +88,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         if (player1Turn) {
             ((Button) v).setText("X");
+            lastPlayer1=true;
         } else {
             ((Button) v).setText("O");
+            lastPlayer1=false;
         }
 
         roundCount++;
@@ -94,8 +99,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (checkForWin()) {
             if (player1Turn) {
                 player1Wins();
+                player1Turn=false;
             } else {
                 player2Wins();
+                player1Turn=true;
             }
         } else if (roundCount == 9) {
             draw();
@@ -179,7 +186,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
 
         roundCount = 0;
-        player1Turn = true;
+
     }
 
     private void resetGame() {
@@ -197,6 +204,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         outState.putInt("player1Points", player1Points);
         outState.putInt("player2Points", player2Points);
         outState.putBoolean("player1Turn", player1Turn);
+        outState.putBoolean("player1Turn", lastPlayer1);
     }
 
     @Override
@@ -207,5 +215,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         player1Points = savedInstanceState.getInt("player1Points");
         player2Points = savedInstanceState.getInt("player2Points");
         player1Turn = savedInstanceState.getBoolean("player1Turn");
+        player1Turn = savedInstanceState.getBoolean("lastPlayer1");
     }
 }
