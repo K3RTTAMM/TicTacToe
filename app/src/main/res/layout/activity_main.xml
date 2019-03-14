@@ -16,10 +16,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:freezesText="true"
-            android:typeface="sans"
             android:text="PLAYER 1: 0"
+            android:textColor="@color/colorPrimary"
             android:textSize="30sp"
-            android:textColor="@color/colorPrimary"/>
+            android:typeface="sans" />
 
         <TextView
             android:id="@+id/text_view_p2"
@@ -27,10 +27,10 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/text_view_p1"
             android:freezesText="true"
-            android:typeface="sans"
             android:text="PLAYER 2: 0"
+            android:textColor="@color/colorPrimary"
             android:textSize="30sp"
-            android:textColor="@color/colorPrimary" />
+            android:typeface="sans" />
 
         <Button
             android:id="@+id/button_reset"
@@ -39,9 +39,9 @@
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
             android:layout_marginEnd="33dp"
+            android:background="@drawable/button_background"
             android:text="reset"
-            android:typeface="monospace"
-            android:background="@drawable/button_background" />
+            android:typeface="monospace" />
 
     </RelativeLayout>
 

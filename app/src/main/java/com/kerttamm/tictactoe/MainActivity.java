@@ -10,7 +10,8 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Button[][] buttons = new Button[3][3];
-
+    String player1;
+    String player2;
     private boolean player1Turn = true;
 
     private int roundCount;
@@ -45,6 +46,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 resetGame();
             }
         });
+
+        getSupportActionBar().hide(); //Hides the Top Action Bar
     }
 
     @Override
