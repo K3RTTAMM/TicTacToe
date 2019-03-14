@@ -9,9 +9,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-
-
-
     private Button[][] buttons = new Button[3][3];
     private boolean player1Turn = true;
     private boolean lastPlayer1 = true;
@@ -71,13 +68,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     public void exitGame(){
-
         Intent _intentOBJ= new Intent(Intent.ACTION_MAIN);
         _intentOBJ.addCategory(Intent.CATEGORY_HOME);
         _intentOBJ.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         _intentOBJ.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(_intentOBJ);
-
     }
 
     @Override
@@ -184,9 +179,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 buttons[i][j].setText("");
             }
         }
-
         roundCount = 0;
-
     }
 
     private void resetGame() {
