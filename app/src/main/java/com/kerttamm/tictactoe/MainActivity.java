@@ -10,9 +10,6 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    String player1;
-    String player2;
-
     private Button[][] buttons = new Button[3][3];
     private boolean player1Turn = true;
     private int roundCount;
@@ -35,9 +32,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Intent intent = getIntent();
-        player1 = intent.getStringExtra("player1");
-        player2 = intent.getStringExtra("player2");
 
         textViewPlayer1 = findViewById(R.id.text_view_p1);
         textViewPlayer2 = findViewById(R.id.text_view_p2);
