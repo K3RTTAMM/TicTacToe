@@ -1,10 +1,12 @@
-# TicTacToe
+# TicTacToe rakendus
 
 Mobiilirakenduste Arendamine 1. Iseseisev Töö - Kert Tamm
 
 ### Viide Juhendile
 Kasutatud allikad: 
+
 https://codinginflow.com/tutorials/android/tic-tac-toe/
+
 https://stackoverflow.com/
 
 ### Projekti seadistamine
