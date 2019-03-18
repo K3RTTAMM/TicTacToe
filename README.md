@@ -23,4 +23,4 @@ Kuna mul oli juba enda arvutis Android Studio ja vajalikud SDK ning NDK versioon
 Peale juhendi järgi rakenduse tööle saamist hakkasin muutma erinevaid aspekte. Proovisin algul lisada ka startmenüü funktsiooni, et mängija saaks näiteks valida kumb alustab, või kasvõi nimede sisestamise, aga pikema pusimise järel ei saanud ikkagi seda funktsionaalsust tööle. 
 Sai lisatud ka tekst "turn" mängija nime taha, et oleks näha millise mängija kord parasjagu käes on. Lisaks sellele sai ka lisatud väike loogikaelement, et kui Player 1 võidab, siis alustab Player 2 ja teisel juhul vastupidi. Lisasin trips-traps-trulli ruudustikule taustapildid, mille background tint värvi muutes saab kergelt muuta ka ruudustiku värve. Muutsin rakenduse värvide ja font elemente ning sai tehtud ka koodi veidi puhtamaks ja eemaldatud hardcoded text nuppudelt.
 
-https://www.upload.ee/image/9713809/54257017_2262757377384812_2439209560594972672_n.jpg
+![Screenshot](demoimage.jpg)
