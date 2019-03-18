@@ -1,6 +1,6 @@
 # TicTacToe rakendus
 
-Mobiilirakenduste Arendamine 1. Iseseisev Töö - Kert Tamm
+#### Mobiilirakenduste Arendamine 1. Iseseisev Töö - Kert Tamm
 
 ### Viide Juhendile
 Kasutatud allikad: 
