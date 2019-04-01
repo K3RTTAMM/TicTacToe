@@ -2,18 +2,18 @@
 
 #### Mobiilirakenduste Arendamine 1. Iseseisev Töö - Kert Tamm
 
-### Viide Juhendile
+### Viide Juhendile.
 Kasutatud allikad: 
 
 https://codinginflow.com/tutorials/android/tic-tac-toe/
 
 https://stackoverflow.com/
 
-### Projekti seadistamine
+### Projekti seadistamine.
 
 Esialgselt sai seadistatud töötamaks API level 24 (Android 7.0), kuid sai hiljem muudetud API level 23 (Android 6.0).
 
-### Arvamus juhendist (min 2 lõiku).
+### Arvamus juhendist.
 Juhend oli suhteliselt hea ja arusaadav, mõne asjaga läks küll aega enne kui sain aru mida miski täpsemalt teeb, aga põhiasjad olid ilusti videodes ära seletatud. Juhend võiks olla natukene parem selles mõttes, et button elemendid ei tohiks olla borderitega, vaid hea oleks, kui oleks borderi asemel tehtud mingil muul paigutamise viisil. Ka Android Studio nuriseb selle üle kui on borderid paigutatud.
 
 ### Kirjeldatakse vajalikke muutusi seoses SDK versiooni muutustega.
