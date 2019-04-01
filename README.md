@@ -25,5 +25,5 @@ Sai lisatud ka tekst "turn" mängija nime taha, et oleks näha millise mängija 
 
 ### Screenshotid:
 
-![Screenshot](demoimage2.jpg)
-![Screenshot](demoimage.jpg) 
+<img align="left" width="360" height="640" src="demoimage.jpg">
+<img align="left" width="360" height="640" src="demoimage2.jpg">
